@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Einfacher Slider</title>
+	<link href="css/anwendung.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet"> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="js/Backtotop.js"></script>
+</head>
+
+<body>
+
+
+	
+<div class="container">
+  <navbar> 
+	</navbar>
+	<brand> <a href="index.html"><img src="img/Logo.png" alt="Lern JavaScript"></a>
+	</brand>
+	
+	<nav id="nav" role="navigation"> 
+	
+    <a class="menu einklapp" href="#">×</a>
+    <ul>
+       <li>
+            <a href="wasistJS.html">Was ist JS</a>
+        </li>
+        <li>
+            <a href="Grundkenntnisse.html">Grundkenntnisse</a>
+        </li>
+        <li>
+            <a href="Anwendungsbeispiele.html">Anwendungsbeispiele</a>
+        </li>
+    </ul>
+  </nav>
+	
+	
+    <header role="banner">
+      <a class="menu" href="#nav"><img src="img/Burger.png" alt="Menue"></a>
+   
+  </header>
+	<test> 
+ <div class="simpleSlides">
+ 	 <img class="slides animate-left" src= "img/yellow.jpg" alt="gelb">
+	 <img class="slides animate-left" src= "img/red.jpg" alt="rot" style="width:100%"> 
+	<img class="slides animate-left" src= "img/blue.jpg" alt="blau" style="width:100%">
+</div>
+</test>
+
+  <section>
+	 
+	 
+	
+	
+		<div class="column3"> 
+		   <h3>Einfacher Slider</h3>
+		   </div>
+	  <div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+	  
+	   <div class="column1">
+         
+          <p>Erstellen eines einfachen Sliders mit drei Bildern. 
+			  Diese werden nacheinander von links eingeblendet.
+			  
+
+		</p>
+		 
+	</div>
+	  
+	  
+	<div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+		
+			&lt;div class="simpleSlides"&gt; <br>
+ 	 &lt;img class="slides animate-left" src= "img/yellow.jpg" alt="gelb" style="width:100%"&gt; <br>
+	 &lt;img class="slides animate-left" src= "img/red.jpg" alt="rot" style="width:100%"&gt; <br>
+	&lt;img class="slides animate-left" src= "img/blue.jpg" alt="blau" style="width:100%"&gt; <br>
+&lt;/div&gt;
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  // Klasse simpleSlides <br>
+//Bilder der Klassen slides und animate-left
+			  </p>
+			  
+		  </div>
+			 </div>
+	  <div class="blau-KA"> 
+		<div class="pas1">
+			<p>
+		
+			.slides { <br>
+  display: none;<br>
+  width: 100%;<br>
+}<br>
+
+.animate-left {<br>
+				display: block; <br>
+  position: relative;<br>
+  animation: animateleft 2s<br>
+}<br>
+
+@keyframes animateleft { <br>
+  from { left :-1000px; opacity:0 } to { left:0; opacity:1 }<br>
+}
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  //Klasse Slide <br>
+// werden nicht angezeigt <br>
+//vollflächig auf der ganzen Seite <br>
+<br>
+
+//Klasse animate-left <br>
+				// über gesamte Breite des Elternelementes <br>
+//Position wird an sich ausgerichtet <br>
+//Animation von links in 2 Sekunden <br>
+
+<br>
+//gerichtet an Bildschirmausgabe:  <br>
+von links bei -1000Px und einer Deckkraft von 0 nach von links 0px und Deckkraft voll. <br>
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+		var simpleSlides = function () { <br>
+    var i; <br>
+    var slides = document.querySelectorAll (".slides"); <br>
+    for (i = 0; i &lt; slides.length; i++) { <br>
+      slides[i].setAttribute ("style", "display:none"); <br>
+    } <br>
+    count++; <br>
+    if (count &lt; slides.length) { count = 1; } <br>
+    slides[count-1].setAttribute ("style", "display:block"); <br>
+    setTimeout (simpleSlides, 3600); <br>
+}
+<br>
+var count = 0;<br>
+simpleSlides();<br>
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  //Klasse Slide <br>
+// werden nicht angezeigt <br>
+//vollflächig auf der ganzen Seite <br>
+<br>
+
+//Klasse animate-left <br>
+//Position wird an sich ausgerichtet <br>
+//Animation von links in 0,8 Sekunden <br>
+
+<br>
+//gerichtet an Bildschirmausgabe:  <br>
+von links bei -500Px und einer Deckkraft von 0 nach von links 0px und Deckkraft voll. <br>
+			  </p>
+			  
+		  </div>
+			 </div>
+	   		<div class="column3"> 
+		  </div>
+	  		<div class="column3"> 
+		  </div>
+	  
+	  
+	  
+	 
+  </section>
+
+
+  <footer>
+	  <br>
+     <p><a href="Datenschutz.html">Datenschutz</a> | <a href="Impressum.html">Impressum</a> </p>
+	  <br>
+  </footer>
+  
+</div>
+	
+	<script src="js/Slider.js"></script>
+</body>
+	
+</html>

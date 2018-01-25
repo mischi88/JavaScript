@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uhrzeit</title>
+	<link href="css/anwendung.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet"> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="js/Backtotop.js"></script>
+</head>
+
+<body>
+
+
+	
+<div class="container">
+  <navbar> 
+	</navbar>
+	<brand> <a href="index.html"><img src="img/Logo.png" alt="Lern JavaScript"></a>
+	</brand>
+	
+	<nav id="nav" role="navigation"> 
+	
+    <a class="menu einklapp" href="#">×</a>
+    <ul>
+        <li>
+            <a href="wasistJS.html">Was ist JS</a>
+        </li>
+        <li>
+            <a href="Grundkenntnisse.html">Grundkenntnisse</a>
+        </li>
+        <li>
+            <a href="Anwendungsbeispiele.html">Anwendungsbeispiele</a>
+        </li>
+    </ul>
+  </nav>
+	
+	
+    <header role="banner">
+      <a class="menu" href="#nav"><img src="img/Burger.png" alt="Menue"></a>
+   
+  </header>
+	
+	
+	
+	<test>
+
+		<p>
+		<br><br><br><br></p>
+	<h7 id="tx" ></h7>
+		
+ </test>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  <section>
+	 
+	 
+	
+	
+		<div class="column3"> 
+		   <h3>Aktuelle Uhrzeit</h3>
+		   </div>
+	  <div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+	  
+	   <div class="column1">
+         
+          <p>Anzeige der aktuellen Uhrzeit.
+
+		</p>
+		 
+	</div>
+	  
+	  
+	<div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+		
+			 &lt;h7 id="Uhrzeit"&gt;  &lt;/h7&gt; 
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  // Überschrift h7 mit ID Uhrzeit
+			  </p>
+			  
+		  </div>
+			 </div>
+	  <div class="blau-KA"> 
+		<div class="pas1">
+			<p>
+		
+			h7{ <br>
+  background-color: #302F2F;  <br>
+font-family: ‚Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";<br>
+  color: #fff;<br>
+	font-size: 50Px;<br>
+	    padding: 10Px;<br>
+}
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  // Überschrift 7 <br>
+				// Hintergrundfarbe<br>
+				// Schriftart<br>
+				// Schriftfarbe<br>
+				// SChriftgröße<br>
+				// Innenabstand<br>
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+		function time() { <br>
+var d = new Date();<br>
+document.getElementById (Uhrzeit") .innerHTML = d.toLocaleTimeString();<br>
+}<br>
+setInterval(time, 1000);
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  // Funktion time <br>
+				// Variable d gibt die aktuelle Zeit an<br>
+				// Ausgabe der ID Uhrzeit mit der Angabe im Zeitcode<br>
+				<br>
+				// Angabe im Intervall von 1000 Millisekunden also einer Sekunde<br>
+				
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  		<div class="column3"> 
+		  </div>
+	  		<div class="column3"> 
+		  </div>
+	  
+	  
+	 
+  </section>
+
+
+  <footer>
+	  <br>
+     <p><a href="Datenschutz.html">Datenschutz</a> | <a href="Impressum.html">Impressum</a> </p>
+	  <br>
+  </footer>
+  
+</div>
+	
+	<script src="js/parallax.js"></script>
+
+
+</body>
+	
+</html>

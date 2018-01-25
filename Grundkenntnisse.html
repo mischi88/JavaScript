@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grundkenntisse JavaScript</title>
+	<link href="css/site.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet"> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="js/Backtotop.js" type="text/javascript" ></script>
+	<script src="js/effects.js" type="text/javascript" ></script>
+	<script src="js/data.js" type="text/javascript" ></script>
+</head>
+	
+<body>
+
+<div class="container">
+  <navbar> 
+	</navbar>
+	<brand> <a href="index.html"><img src="img/Logo.png" alt="Lern JavaScript"></a>
+	</brand>
+	
+	<nav id="nav" role="navigation"> 
+	
+    <a class="menu einklapp" href="#">×</a>
+    <ul>
+        <li>
+            <a href="wasistJS.html">Was ist JS</a>
+        </li>
+        <li>
+            <a href="#">Grundkenntnisse</a>
+        </li>
+        <li>
+            <a href="Anwendungsbeispiele.html">Anwendungsbeispiele</a>
+        </li>
+    </ul>
+  </nav>
+	
+	
+    <header role="banner">
+      <a class="menu" href="#nav"><img src="img/Burger.png" alt="Menue"></a>
+   
+  </header>
+	
+	
+	<kasten>
+	</kasten>
+	
+	<ueberschrift>
+		<h2>Grundkenntnisse</h2>
+		<p>Erste Schritte mit JavaScript</p>
+	</ueberschrift>
+
+  
+
+  <section>
+	  
+	  <!-- Grundgerüst -->
+	
+		<div class="column3"> 
+		   <h3>Grundgerüst</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Erklärungen werden mit zwei Slashes dargestellt und sind für den Code nicht relevant.
+		</p>
+		 <div class="grey">
+		  <p>// Erklärungen
+			 </p></div>
+		  <p> In den bunt umrandeten Kästen wird der Code gezeigt. <br>
+		  Dabei steht <strong> rot für HTML-Code, blau für CSS-Code, gelb für den JavaScript-Code und grau für Strukturbeispiele.</strong> <br>
+		  Der Code kann beim Klicken auf den Testbutton in einem separaten Fenster begutachtet werden.
+		  <br> <br>
+		  Grundkenntnisse in HTML und CSS sind nötig.</p>
+	</div>
+	    
+	 
+         <div class="rot-KA"> 
+          <p>HTML Fenster <br> <br>
+		</p>
+	</div>
+	
+	
+         <div class="blau-KA"> 
+          <p>CSS Fenster <br> <br>
+		</p>
+	</div>
+	
+	  
+         <div class="gelb-KA"> 
+          <p>JavaScript Fenster <br> <br>
+		</p>
+	</div>
+	  
+	
+	
+         <div class="grau-KA"> 
+          <p>Strukturbeispiele <br> <br>
+		</p>
+	</div>	  
+	
+	  <div class="column3"> 
+		  </div>
+
+		  <div class="button-KA" type="button"> Teste den Code
+		  </div>
+
+
+	  <!-- Darstellung über Einbindung in HTML -->
+	  <div class="column3"> 
+		   <h3>Darstellung über Einbindung in HTML</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Um JavaScript darstellen zu können, muss man den Code <strong>in HTML einbinden</strong>.
+			Dazu gibt es grundsätzlich zwei Möglichkeiten.
+			Entweder fügen Sie den Quellcode in die <strong>gleiche Datei</strong>, die auch den HTML-Code enthält,
+			in das <strong>script-tag</strong> ein.
+			(Das &lt;script&gt; tag kann entweder im <strong> &lt;head&gt;</strong> oder am Ende des <strong>&lt;bodys&gt;</strong> stehen.)
+		</p>
+		 
+	</div>
+	  
+		
+	   <div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+			&lt;!DOCTYPE html&gt; <br>
+			&lt;html&gt; <br>
+				&nbsp;&nbsp;  &lt; head &gt; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp; &lt; title &gt; &lt; /title &gt; <br>
+				&nbsp;&nbsp;  &lt; /head &gt; <br>
+				&nbsp;&nbsp;  &lt; body &gt; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;  <strong> &lt; script type=“text/javascript“&gt; </strong>  <br>
+					&nbsp;&nbsp;&nbsp;&nbsp; // hier steht JavaScript <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;  <strong> &lt; /script &gt; </strong>  <br>
+				&nbsp;&nbsp;  &lt; /body &gt; <br>
+			&lt;/html&gt; <br>	
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  <br> <br> <br> <br> <br> <br>
+				// Script tag befindet sich entweder am Ende <br>
+				// des body tags oder im head tag
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="column1">
+         
+          <p> oder aber Sie legen den <strong> Quellcode in eine eigene Datei und verweisen auf diese</strong> von der Webseite (Ebenfalls im <strong>&lt;script&gt;</strong> tag). In diesem Fall heißt die Datei <strong>libary.js</strong> .
+		</p>
+		 
+	</div>
+	  
+	   <div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+			&lt;!DOCTYPE html&gt; <br>
+			&lt;html&gt; <br>
+				&nbsp;&nbsp;  &lt; head &gt; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp; &lt; title &gt; &lt; /title &gt; <br>
+				&nbsp;&nbsp;  &lt; /head &gt; <br>
+				&nbsp;&nbsp;  &lt; body &gt; <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;  <strong> &lt; script type=“text/javascript“ src=“library.js &gt; </strong>  <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;  <strong> &lt; /script &gt; </strong>  <br>
+				&nbsp;&nbsp;  &lt; /body &gt; <br>
+			&lt;/html&gt; <br>	
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  <br> <br> <br> <br> <br> <br>
+				// Script tag befindet sich in separater Datei
+				
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			// hier steht JavaScript
+				
+			  </p>
+		  </div>
+		  </div>
+	  
+	  
+	  
+	  
+	  
+<!-- Variablen -->
+
+	   <div class="column3"> 
+		   <h3>Variablen</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Um Informationen in Javascript speichern zu 
+können, benötigen Sie <strong> Variablen</strong>.
+Zuerst legen sie deren Namen fest.
+In einer oder mehreren Zeilen.
+
+		</p>
+		 
+	</div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var Variable1; <br>
+			var Variable2; <br>
+			var Variable3; <br>
+			var Variable4; <br>
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			   // Anlegen der Variablen Variante mehrzeilig
+				nach jeder Zeile kommt in JS ein Semikolon ( ; )
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var Variable 1, var Variable 2, var Variable 3, var Variable 4;
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  // Anlegen der Variablen Variante einzeilig
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="column1">
+         
+          <p>Danach können die Variablen definiert werden.
+Diese können unterschiedlichen Typs sein.
+</p>
+		 
+	</div>
+	  
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			Variable1 = 42; <br>
+			Variable2 = ‘A‘ ; <br>
+			Variable3 = “Hello“; <br>
+			Variable4 = true; 
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			   // Zahlen <br>
+				// Zeichen immer in (‘ ‘) oder (“ “) <br>
+				// Zeichenketten/String immer in (‘ ‘) oder (“ “) <br>
+				// Wahrheitswert/Boole (true) oder (false) 
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  <div class="column1">
+         
+          <p>Das Anlegen einer  <strong> Variable Alter und Zuweisung 22 </strong> in langer und kurzer Schreibweise.
+
+</p>
+		 
+	</div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var Alter; <br>
+			Alter = 22; 
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			   // Anlegen <br>
+			// Definieren
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	   <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var Alter = 22;
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>// Anlegen und Definieren
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  
+	  <!-- Operatoren -->
+	  
+<div class="column3"> 
+		   <h3>Operatoren</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Um Variablen und Informationen zu verknüpfen gibt es in JS ca. 40 Operatoren.
+<strong> Operatoren sind Rechenzeichen und 
+Operanden heißen die Variablen.</strong>
+Aufgeteilt sind diese in <strong>unäre Operatoren </strong>(erwarten einen Operanden) und <strong>binäre Operatoren</strong> (erwarten mindestens zwei Operatoren).
+
+		</p>
+		 
+	</div>
+
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var i = 10, var j = 5, r, m; <br>
+			r = -i; <br>
+			m = i + j;
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>//Variablen anlegen und definieren <br>
+			// ein unärer Operator ist (-) vor einer allein stehenden Zahl <br>
+			// ein binärer Operator ist (+)
+
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="column1">
+         
+          <p>Es gibt verschiedene Operatoren. 
+Hier die wichtigsten.
+(Operanden sind hier allgemein als i definiert)
+
+
+		</p>
+		 
+	</div>
+	  
+	  <div class="column1"> 
+		   <h3>Zuweisungsoperatoren</h3>
+		   </div>
+	<div class="underline-two">
+	  </div>
+	  
+	  <div class="column1">
+         
+		  <table>
+	<tr>
+		<th> <font size="+2">=</font> </th>
+		<th> ist gleich</th>
+			  </tr>
+		  
+		  </table>
+	</div>
+	 
+	  <div class="column1"> 
+		   <h3>Arithmetische Operatoren (Rechenzeichen) </h3>
+		   </div>
+	<div class="underline-two">
+	  </div>
+	  
+	  <div class="column1">
+         
+         <table>
+	<tr>
+		<th> <font size="+2">+</font> </th>
+		<th> Addition</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">-</font> </th>
+		<th> Subtraktion</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">*</font> </th>
+		<th> Multiplikation</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">/</font> </th>
+		<th> Division</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">%</font> </th>
+		<th> Division mit Restwert ganzzahlig</th>
+			  </tr>
+		  
+		  </table>
+			  
+			 
+			  
+	</div>
+	  
+	  <div class="column1"> 
+		   <h3>Logische Operatoren <br>
+(Verknüpfung von Wahrheitswerten) </h3>
+		   </div>
+	<div class="underline-two">
+	  </div>
+	  
+	  <div class="column1">
+         
+          <table>
+	<tr>
+		<th> <font size="+2">&amp;&amp;</font> </th>
+		<th> UND (true wenn beide true)
+</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">||</font> </th>
+		<th> ODER (true wenn mind. eines true)
+</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">!i</font> </th>
+		<th> NICHT (true wenn Operand false)</th>
+			  </tr>
+			 
+		  
+		  </table>
+	</div>
+	  
+	  <div class="column1"> 
+		   <h3>Vergleichsoperatoren </h3>
+		   </div>
+	<div class="underline-two">
+	  </div>
+	  
+	  <div class="column1">
+         <table>
+	<tr>
+		<th> <font size="+2">==</font> </th>
+		<th> Gleichheit</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">!=</font> </th>
+		<th> Ungleichheit</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">&lt;</font> </th>
+		<th> kleiner </th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">&lt;=</font> </th>
+		<th> kleiner gleich</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">&gt;</font> </th>
+		<th> größer </th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">&gt;=</font> </th>
+		<th> größer gleich</th>
+			  </tr>
+		  
+		  </table>
+        
+	</div>
+	  
+	  <div class="column1"> 
+		   <h3>Inkrement- / Dekrementoperatoren <br>
+(erhöhen erniedrigen den Operand)
+</h3>
+		   </div>
+	<div class="underline-two">
+	  </div>
+	  
+	  <div class="column1">
+         <table>
+	<tr>
+		<th> <font size="+2">i++</font> </th>
+		<th> i wird um eins erhöht
+</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">++i</font> </th>
+		<th> i wird um eins erhöht</th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">i--</font> </th>
+		<th> i wird um eins erniedrigt
+ </th>
+			  </tr>
+			 <tr>
+		<th> <font size="+2">--i</font> </th>
+		<th> i wird um eins erniedrigt
+</th>
+			  </tr>
+		
+		  
+		  </table>
+        
+	</div>
+	  
+		<div class="column1">
+         <br>
+          <p>Der Unterschied besteht in der Reihenfolge. 
+Bei ++i wird die Variable sofort als i + 1 ausgegeben.
+
+
+
+		</p>
+		 
+	</div>	
+<div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var i = 10, r; <br>
+r = ++i;
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>/ Anlegen und Definieren von i sowie Anlegen von r <br>
+// r ist 11
+
+
+
+			  </p>
+			  
+		  </div>
+			 </div>
+		
+	  <div class="column1">
+      
+          <p>Bei i++ wird die Variable als i ausgegeben. Erst bei erneutem Aufruf wird 1 hinzugezählt.	
+
+		</p>
+		 
+	</div>	
+<div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var i = 10, r; <br>
+r = i++; <br>
+r;
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>// Anlegen und definieren von i sowie anlegen von r <br>
+// r ist 10 <br>
+				//erst hier ist r dann 11
+
+
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="column1"> 
+		   <h3>typeof Operator</h3>
+		   </div>
+	<div class="underline-two">
+	  </div>
+	  
+	  <div class="column1">
+         
+		  <p>unärer Operator zur Bestimmung von Datentypen</p>
+	</div>
+	  
+	  
+	  <!-- Kontrollstrukturen -->
+	  
+<div class="column3"> 
+		   <h3>Kontrollstrukturen</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Sie sind die Informationsverarbeitung in Abhängigkeit von Bedingungen einen Code auszuführen.
+		</p>
+		 
+	</div>
+	  <div class="grau-KA"> 
+		<div class="pas1">
+			<p>
+			Schlüsselwort (Bedingung) { <br>
+Anweisungsblock <br>
+}
+				
+			  </p>
+		  </div>
+		  
+			 </div>
+	  
+	  <div class="column1">
+         
+          <p> <strong> if - Kontrollstruktur </strong> <br>
+bei Erfüllung der Bedingung wird der Anweisungsblock ausgeführt
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var OK = confirm("Klicken Sie auf OK.“); <br>
+<br>
+if (OK == true) { <br>
+	&nbsp;&nbsp;alert("Sie haben auf OK geklickt.“); <br>
+} 
+   
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Anlegen und definieren von der Variablen
+   OK mit Bestätigungsfeld (...) <br>
+// if mit Bedingung zum Ausführen der Aktion <br>
+// Anweisungsblock : alert öffnet ein Pop-Up Fenster 
+   mit Inhalt (...)
+				
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="01.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	   <div class="column1">
+         
+          <p> <strong> if/else - Kontrollstruktur
+ </strong> <br>
+wenn die if-Bedingung false ist,
+tritt der else-Anweisungsblock in Kraft
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var OK = confirm("Klicken Sie auf OK."); <br>
+<br>
+      if (OK == true) { <br>
+       &nbsp;&nbsp; alert("Sie haben auf OK geklickt."); <br>
+      } <br> else { <br>
+        &nbsp;&nbsp;alert("Sie haben auf Abbruch geklickt."); <br>
+      } 
+   
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Anlegen und definieren von der Variablen
+   OK mit Bestätigungsfeld (...) <br>
+// if mit Bedingung zum Ausführen der Aktion<br>
+// Anweisungsblock : alert öffnet ein Pop-Up Fenster 
+   mit Inhalt (...)<br>
+// wenn if nicht erfüllt wird, <br>
+// Anweisungsblock : alert öffnet ein Pop-Up Fenster 
+   mit Inhalt (...)<br>
+				
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="02.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	  
+	  <div class="column1">
+         
+          <p> <strong> while - Kontrollstruktur
+
+ </strong> <br>
+Der Anweisungsblock wird so lange ausgeführt und 
+wiederholt sich, bis die Bedingung false ist
+
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+			var OK = confirm("Klicken Sie auf OK.“); <br>
+<br>
+      while (OK == false) { <br>
+        OK = confirm("Sie sollen doch auf OK klicken.“); <br>
+      }    
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Anlegen und definieren von der Variablen 
+   OK mit Bestätigungsfeld (...) <br>
+// while mit Bedingung zum Ausführen der Aktion<br>
+// Anweisungsblock Bestätigungsfeld (...)
+				
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="03.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	  
+	  
+	  <div class="column1">
+         
+          <p> <strong>do while - Kontrollstruktur
+
+ </strong> <br>
+Anweisungsblock wird mind. einmal ausgeführt. Danach wird entschieden, ob die Bedingung weiterhin erfüllt ist.
+
+
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+ var OK; <br>
+do { <br>
+   <strong></strong>     OK = confirm("Klicken Sie auf OK.“); <br>
+} <br>
+while (OK == false); 
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Anlegen von der Variablen OK <br>
+
+//do Schlüsselwort <br>
+// Anweisungsblock Bestätigungsfeld (...) <br>
+
+//while mit Bedingung zum Ausführen der Aktion
+  so lange bis while nicht mehr erfüllt ist.
+
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="04.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	  
+	  
+	  <div class="column1">
+         
+          <p> <strong>for - Kontrollstruktur
+
+
+ </strong> <br>
+es steht fest, wie oft wiederholt wird
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+ var Anzahl; <br>
+
+for (Anzahl = 0; Anzahl &lt; 3; ++Anzahl) { <br>
+     &nbsp;&nbsp;   alert("Sie müssen insgesamt dreimal auf OK klicken."); <br>
+} 
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Anlegen von der Variablen Anzahl <br>
+
+//for mit Bereichen (Initialisierungsbereich; Bedingung zur 
+  Ausführung des Anweisungsblocks; Variablenänderung nach 
+  Schleifendurchlauf)<br>
+//Anweisungsblock : alert öffnet ein Pop-Up Fenster 
+   mit Inhalt (...)<br>
+
+
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="05.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	  
+	  
+	  
+	  <!-- Funktionen -->
+	  
+<div class="column3"> 
+		   <h3>Funktionen</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Funktionen ermöglichen das Zusammenstellen mehrerer Anweisungen zu einem Anweisungsblock. In diesem Anweisungsblock können beliebig Variablen, Operatoren und Kontrollstrukturen verwendet werden. Dem Anweisungsblock wird ein Funktionsname gegeben, über den der Block jederzeit an verschiedenen Stellen im Programm aufgerufen und ausgeführt werden kann.
+
+		</p>
+		 
+	</div>
+	  
+	  <div class="grau-KA"> 
+		<div class="pas1">
+			<p>
+			function Name (Parameterliste) { <br>
+Anweisungsblock <br>
+}
+				
+			  </p>
+		  </div>
+		  
+			 </div>
+	  <div class="column1">
+         
+		  <p> <strong>vordefinierte Javascript-Funktionen </strong> <br> </p>
+<p> <strong>prompt() </strong>
+			liefert einen Rückgabewert, der nicht in irgendeiner Variablen gespeichert wird, sondern der direkt als Parameter an die Funktion parseInt() weitergegeben wird
+
+
+</p>
+		   <p> 
+<strong>parseInt() </strong>
+			Parameter gibt die im String enthaltene Zahl als Wert vom Typ Zahl zurück (nur ganze Zahlen)
+
+
+
+</p>
+		   <p> 
+<strong>parseFloat() </strong>
+			Parameter gibt die im String enthaltene Zahl als Wert vom Typ Zahl zurück (Kommazahlen)
+
+
+
+</p>
+		 
+	</div>
+	  
+	  <div class="column1">
+         
+          <p> <strong>Beispiel
+
+
+ </strong> <br>
+Eingabe von zwei Zahlen und deren Addition
+
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+ function add(a, b) { <br>
+    &nbsp;&nbsp;     var r = a + b; <br>
+    &nbsp;&nbsp;     alert(r); <br>
+} <br>
+var Zahl1 = parseInt(prompt("Geben Sie eine Zahl ein.", "")); var Zahl2 = parseInt(prompt("Geben Sie eine zweite Zahl ein.", "")); <br>
+<br>
+add(Zahl1, Zahl2); 
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Funktion add = Addition <br>
+// Definition von r <br>
+// Ausgabe von r <br>
+<br>
+//Eingabefenster mit Text(...) <br>
+//Eingabefenster mit Text(...) <br>
+<br>
+
+//Ausführen der Funktion 
+
+
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="06.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	  
+	  <!-- Klassen -->
+	  
+<div class="column3"> 
+		   <h3>Klassen</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Es können neue Objekte auf Basis von in JS eingebauten Klassen verwendet und erstellt werden.
+
+		</p>
+		 
+	</div>
+	  
+	  <div class="grau-KA"> 
+		<div class="pas1">
+			<p>
+		var Objektvariable = new Klasse (Wert); <br> <br>
+var Objektvariable = Wert;
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+		// zwei Möglichkeiten zur Definition von Objekten <br> <br>
+//Kurzschreibweise
+			  </p>
+		  </div>
+		  
+			 </div>
+	  
+	  
+	  <div class="column1">
+         
+          <p> <strong>String
+
+ </strong> <br>
+Ausgabe von Text
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+ var HalloWelt = new String(„Hallo, Welt!“); <br>
+	   &nbsp;&nbsp;alert(HalloWelt.toUpperCase()); 
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Definition Objekt mit Klasse String <br>
+// Ausgabe des Wertes mit toUpperCase(), was den Wert 
+   zusätzlich in Großbuchstaben ausgeben kann
+
+
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="07.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	  <div class="column1">
+         
+          <p> <strong>Date 
+ </strong> <br>
+Ausgabe vom Datum
+
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+ var Datum = new Date(); <br>
+&nbsp;&nbsp;alert("Es ist " + Datum.getHours() + ":" + <br>
+&nbsp;&nbsp;Datum.getMinutes() + " Uhr."); 
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//Definition der Variablen Date <br>
+// Ausgabe des Wertes mit Strings in "" und der aktuellen Zeit
+   in Stunden und Minuten
+
+
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="08.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  
+	  <div class="column1">
+         
+          <p> <strong>Array
+ </strong> <br>
+Datenfeld, in dem mehrere Infos abgelegt werden können.
+
+
+</p>
+		 
+	</div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+var Namen = new Array(); <br>
+
+Namen[0] = "Anton"; <br>
+Namen[1] = "Boris"; <br>
+Namen[2] = "Caesar"; <br>
+for (var i = 0; i  	&lt; Namen.length; ++i) { <br>
+document.write(Namen[i] + "&lt;br&gt;"); 
+      } 
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//Definition der Variablen Namen <br>
+
+//Definition der einzelnen Werte des Arrays <br>
+<br> <br>
+
+// for Kontrollstruktur <br>
+// Ausgabe mit document.write in der vorgegebenen 
+   Reihenfolge sowie jeweils einem Zeilenumbruch
+
+
+			  </p>
+		  </div>
+	  
+	  
+	  </div>
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="09.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	
+	  <!-- Ausdrücke -->
+	  
+<div class="column3"> 
+		   <h3>Ausdrücke</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	  <div class="column1">
+         
+          <p>Das Überprüfen von Daten auf Gültigkeit auch für komplexe Datenüberprüfungen stellen reguläre Ausdrücke dar. (Bei Überprüfung der Eingabe einer E-Mail Adresse)
+		</p>
+		 
+	</div>
+	  
+	  <div class="column1">
+         
+          <p> <strong>Beispiel
+ </strong> <br>
+Eingabeüberprüfung einer zweistelligen Zahl mit <br>
+<strong> var expression = /^\d{2}$/ </strong> <br> <br>
+
+Zwischen <strong>/ und /  </strong>wird der Ausdruck definiert <br>
+<strong>^  </strong>bedeutet Zeilenanfang<br>
+<strong>\d  </strong>bedeutet Zahl (digit)<br>
+Die Zahl in den Klammern <strong>{}  </strong>gibt eine bestimmte Häufigkeit einer Einheit an, welche vor den Klammern stehen muss. In diesem Fall<strong> 2 von \d </strong>, also zwei Zahlen.<br>
+<strong>$  </strong>bedeutet Zeilenende
+
+</p>
+		 
+	</div>
+	  
+	  
+	 <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+var input; <br>
+var expression = /^\d{2}$/; <br>
+var result; <br>
+<br>
+input = prompt("Geben Sie eine zweistellige Zahl ein.");<br>
+				result = expression.test(input); <br>
+      
+
+
+
+if (result == true) { <br>
+&nbsp;&nbsp;alert("Eingabe korrekt!"); <br>
+} <br>
+else { <br>
+&nbsp;&nbsp;alert("Eingabe falsch!"); <br>
+} 
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//Definition der Variablen input <br>
+//Definition von expression als regulärer Ausdruck siehe oben <br>
+//Definition der Variablen result <br>
+
+//Die Eingabe wird in der Variablen input gespeichert <br>
+//Variable wird als Parameter der Methode test() übergeben,
+   expression ist die Methode für ein Objekt <br>
+ // In der Variablen result wird das Ergebnis des Funktions-
+   aufrufs von test() gespeichert. <br>
+
+//je nach Ausgabe des Wahrheitswertes von result
+  erscheint ein jeweiliges Pop-Up Fenster()
+
+
+			  </p>
+		  </div>
+	  </div>
+	  
+	  <div class="column3"> 
+		  </div>
+	  
+	  <div class="button-KA" type="button" > <a href="10.html" target="_blank" rel="noopener">Teste den Code</a> 
+		  </div>
+	  
+	   <div class="column3"> 
+		  </div>
+	  <div class="column1">
+         
+          <p> <strong>Die jeweils benötigten Ausdrücke können in Listen im Internet gefunden werden.
+ </strong> 
+</p>
+		  
+		 
+	</div>
+	  
+	  <!-- DOM -->
+	  
+<div class="column3"> 
+		   <h3>DOM</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	   <div class="column3">
+		<div class="pas1">
+			<p>
+				Das<strong>  DOM (Document Object Model)</strong> ist die <strong>Schnittstelle zwischen HTML und dynamischem JavaScript</strong>. Alle Elemente werden zu Objekten, die dynamisch aufgerufen, verändert, hinzugefügt und gelöscht werden können. <br><br>
+
+Eine Webseite liegt dem Browser zunächst als bloßer Text, der mit der Auszeichnungssprache HTML formatiert ist, vor. Der Zugriff auf Elemente in Webseiten erfolgt über Objekthierarchien. Eine Objekt-
+hierarchie ist eine Auflistung verschiedener Elemente, die teilweise anderen Elementen untergeordnet sind und daher eine Art Verästelung darstellen.<br><br>
+
+Mit Hilfe von JavaScript und des DOMs können gezielt Elemente einer Webseite angesprochen und durch Anwenderereignisse Scripte gestartet werden, die dann interaktiv sowohl Inhalte als auch Layout verändern. Ebenso kann entfernt oder anders verknüpft werden. <br> <br>
+				<strong> Aufbau des Dom </strong> 
+Die einzelnen Elemente werden als Nodes (Knoten) bezeichnet. Die überliegenden Tags heißen Parent- bzw. die darunter liegenden Child-Node bezeichnet.
+Nachfahren desselben Parent-Elements werden als Siblings bezeichnet. <br><br>
+
+Bei diesen Begriffen finden sich noch Erweiterungen, wie firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.
+ <br>
+
+			</p>
+				
+			</div>
+			
+		  <div class="pas2">
+			  <div class="lin6">
+			<img src="img/dom.svg" alt="Aufbau DOM" style="width:100%"> 
+	</div>
+		   </div>
+	 
+	  </div>
+	<div class="column1">
+         
+          <p> <strong>Dom Formular
+ </strong> <br>
+Im Beispiel geht es um das Ausfüllen eines Formulars. Das Formular hat drei childNodes: einen commentNode und zwei DIV-Nodes. Der erste DIV hat zwei Kinder: LABEL und INPUT. LABEL hat ein Kind: den Text-Node „Name“. Das zweite DIV hat ein Kind: den Node LABEL, der wiederum auch nur ein Kind,nämlich den Node INPUT hat.
+Somit kann auf die Struktur des Doms zugegeriffen werden und Inhalt plaziert werden.
+
+</p>
+		 
+	</div>
+	  
+	  <div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+				
+&lt;form id=“formdemo“ …&gt; <br>
+&lt;div&gt;<br>
+   &nbsp;&nbsp;&lt;label for=“name“&gt;Name&lt;/label&gt;<br>
+   &nbsp;&nbsp;&lt;input type=“text“ name=“name“ /&gt; <br>
+&lt;/div&gt;<br>
+&lt;div&gt;<br>
+  &nbsp;&nbsp; &lt;label&gt;<br>
+     &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=“submit“ value=“Speichern“ /&gt;<br>
+   &nbsp;&nbsp;&lt;/label&gt;<br>
+&lt;/div&gt;
+	
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Formular <br><br>
+
+//Namen eingeben<br><br>
+
+<br><br><br>
+
+
+//Speichern
+
+
+			  </p>
+		  </div>
+	  </div>
+	  
+	  
+	  <div class="column1">
+         
+          <p> <strong>CSS mit JS ändern
+ </strong> <br>
+Ebenso kann mit JS nicht nur auf den Aufbau, sondern auch auf Eigenschaften zugegriffen werden.
+Zum Beispiel um bei Klick auf einen Button die Schrift eines Textes zu verändern.
+Das Script identifiziert den Button anhand des id-Attributs change und fängt ein onclick-Event auf dem Element ab. Beim Klick auf den Button fügt das Script ein style-Attribut in das Element elem ein.
+
+</p>
+		 
+	</div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+				
+document.getElementById(‚change‘) .onclick = function () { <br>
+   elem.setAttribute(‚style‘,‘font-family: Georgia,Times, serif‘); <br>
+}
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			// Change Button mit Funktion bei Klick <br>
+				// Setzte die Eigenschaft der Schrift auf Georgia, sonst Times, sonst Serifenschrift
+
+			  </p>
+		  </div>
+	  </div>
+	  
+	  <div class="column1">
+         
+          <p> <strong>querySelector
+ </strong> <br>
+Ist eine Methode, die den direkten Zugriff auf Elemente über ihrem Tag-Namen oder über Klassen und Attribute ermöglicht. Sie wählen Elemente anhand von CSS-Selektoren aus und geben ein einzelnes Element oder eine Liste der Treffer (Node List) zurück. QuerySelector gibt das erste gefundene Element zurück, querySelectorAll gibt alle gefundenen Elemente in einer NodeList zurück.
+
+</p>
+		 
+	</div>
+	  
+	  <div class="grau-KA"> 
+		<div class="pas1">
+			<p>
+				
+document.querySelector('h3‘) <br>
+document.querySelectorAll('h3‘) <br>
+document.querySelector('.ci‘) <br>
+document.querySelector('.ci a‘)<br>
+document.querySelector ('#postheader‘)<br>
+document.querySelectorAll ('li:nth-child(odd)‘)<br>
+document.querySelectorAll ('div:not(.ignore)‘)<br>
+
+document.querySelectorAll("h3, bockquote, .myclass")<br>
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//selektiert das erste h3-Element <br>
+//selektiert alle h3-Elemente<br>
+//gibt das erste Element mit der Klasse .ci zurück<br>
+//gibt alle a-Elemente unterhalb der Klasse .ci zurück<br>
+//gibt das Element mit id=“postheader“ zurück<br>
+//alle li-Elemente mit ungeradem Index<br>
+//alle div-Elemente, die nicht zur CSS-Klasse .ignore gehören<br>
+
+//sammelt alle h3- und blockquote-Elemente und 
+alle Elemente mit der Klasse .myclass.
+			  </p>
+		  </div>
+	  </div>
+	  
+	  
+	  	  <!-- JS Libaries / Code Bibiliotheken -->
+	  
+<div class="column3"> 
+		   <h3>JS Libaries / Code Bibiliotheken</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	   <div class="column1">
+		
+			<p>
+				Javascript bietet nicht so viele eingebauten Objekte und Methoden wie altgediente Programmiersprachen, darum haben unzählige Entwickler Sammlungen von nützlichen Code-Fragmenten zu Libraries oder Framesworks wie jQuery, jQueryMobile, Zepto, Velocity.js, dojo und Google Closure gebündelt.
+
+Erst Libraries haben die Entwicklung von komplexen Anwendungen mit Javascript effizient gemacht.
+
+Die neuen Browser unterstützen Javascript 5 auf breiter Basis. Es lohnt sich, den Einsatz von Javascript Libraries wie jQuery zu überdenken und für einfache Aufgaben "Vanilla Javascript" – Javascript ohne den Overhead von jQuery – einzusetzen.
+
+			</p>
+				
+			
+	  </div>
+	   <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+				
+document.querySelectorAll(‚.my #awesome selector‘); <br> <br>
+				$(‚.my #awesome selector‘);
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//JS (IE8+) <br> <br>
+				//jQuery (Library)
+
+			  </p>
+		  </div>
+	  </div>
+	  <div class="column1">
+		
+			<p>
+				Alle Libraries und Frameworks eliminieren die Browser-Unterschiede, alle bieten einen einfachen Zugriff auf Ajax-Funktionen (einzelne Bereiche einer Webseite können abhängig von einer Nutzeraktion mit Daten und Inhalte ausgetauscht werden. Dabei muss nicht die ganze Seite neu laden)
+
+jQuery ist mit Abstand die populärste Javascript-Library. Wer professionelles Webdesign mit Effekten und Hilfestellungen für den Benutzer einsetzen will, kommt nicht um jQuery kaum herum.
+
+Wenn höchste Performance gefragt ist, jede Millisekunde zählt, oder nur ein kleiner Teil der Funktionen von jQuery genutzt werden, bleibt jQuery besser außen vor.
+
+			</p>
+				
+			
+	  </div>
+
+	  
+	 
+	  <div class="column3">
+		<div class="pas1">
+			<div class="lin3">
+				<img src="img/jquery.png" alt="jQuery" style="width:100%"> 
+			</div>
+			<div class="lin4"> 
+
+				<p>Spezialisiert auf die Darstellung der HTML-Seite als DOM und Ajax. 
+Nutzung: um Elemente des DOM (nodes) zu selektieren.
+			</p>
+			</div>
+			</div>
+		  <div class="pas2">
+			<div class="lin3">
+				<img src="img/jquery-mobile.png" alt="jQuery-mobile" style="width:100%">
+			</div>
+			<div class="lin4">
+
+				<p>Javascript Library für Web-Anwendungen auf den mobilen Geräten
+			</p>
+			</div>
+		  </div>
+	</div>
+	  
+	  
+	  
+	  <div class="column3">
+		<div class="pas1">
+			<div class="lin3">
+				<img src="img/zepto.png" alt="Zepto" style="width:100%"> 
+			</div>
+			<div class="lin4"> 
+
+				<p>Kürzere Ladezeit als jQuery
+Zepto unterstützt nur moderne Browser (IE ab Version 10).
+			</p>
+			</div>
+			</div>
+		  <div class="pas2">
+			<div class="lin3">
+				<img src="img/angularjs.png" alt="Angularis"  style="width:100%">
+			</div>
+			<div class="lin4">
+
+				<p>AngularJS stellt die modernsten Objekte und Services für Anwendungen und Webseiten mit Javascript zur Verfügung.
+			</p>
+			</div>
+		  </div>
+	</div>
+	  <div class="column3">
+		<div class="pas1">
+			<div class="lin3">
+				<img src="img/react.png" alt="React" style="width:100%"> 
+			</div>
+			<div class="lin4"> 
+
+				<p>React wird eher in Apps eingesetzt als für Webseiten. 
+			</p>
+			</div>
+			</div>
+		  <div class="pas2">
+			<div class="lin3">
+				<img src="img/createjs.png" alt="Create" style="width:100%">
+			</div>
+			<div class="lin4">
+
+				<p>Modulare Javascript Library für Animationen mit HTML5.</p>
+			</div>
+		  </div>
+	</div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="column1">
+        
+          <p>  <br><strong> Mit Hilfe von Libraries kann ein mäßig erfahrener Programmierer komplexe Anwendungen mit einer steilen Lernkurve erstellen. Selbst erfahrene Programmierer gewinnen durch die Einsicht in die Funktionen. </strong>
+</p>
+		 
+	</div>
+	  
+	  
+	  
+	  
+	  
+	  
+	   <!-- jQuery einbinden-->
+	  
+<div class="column3"> 
+		   <h3>jQuery einbinden</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	   <div class="column1">
+		
+			<p>
+				jQuery wird von http://jquery.com geladen und per script-Tag in das HTML-Dokument eingebunden.
+
+Dabei muss nur sicher gestellt sein, dass jQuery als erste Skript-Datei eingebunden wird.
+
+jQuery ist mit rund 80 KB (in der minifizierten Fassung!) keine leichte Kost für die Ladezeit der Seite. Die Alternative zum Einsatz auf dem eigenen Webspace ist ein CDN, ein Content Delivery Network.
+
+			</p>	
+	  </div>
+	  <div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+				
+				&lt;script src=“jquery-3.2.1.min.js“&gt; &lt;/script&gt; <br> <br>
+
+&lt;script src=“https://ajax.googleapis.com/ ajax/libs/jquery/3.2.1/ jquery.min.js“&gt; &lt;/script&gt;
+
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//von jquery.com heruntergeladen und auf Server <br> <br>
+
+//Einbindung über das CDN mit Link auf die von Google 
+gehostete Version.
+
+			  </p>
+		  </div>
+	  </div>
+	  
+	  
+	   <!-- jQuery $() / jquery()-->
+	  
+<div class="column3"> 
+		   <h3>jQuery $() / jquery()</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	   <div class="column1">
+		
+			<p>
+				Jede $()-Funktion sammelt einen oder mehrere Knoten des DOM-Baums. In der einfachsten Form wird nur ein Ausdruck übergeben – meistens ein CSS-Selektor –, der alle passenden Elemente im Dokument findet. <br>
+				Den gefundenen Elementen lassen sich z.B. CSS-Stile zuweisen, ändern oder entfernen. 
+			</p>	
+	  </div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+				
+				$('#content').width(300); <br>
+$('h2').css('color', 'blue');<br>
+$('div.post').css({max-width: 40em, border: 1px dotted gray}); <br>
+
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//Setzt die Breite des div-Elements mit id="content" auf 300px<br> 
+
+//Setzt die Farbe aller h2-Elemente auf Blau
+<br> //Setzt die maximale Breite von div-Elementen der Klasse post auf 40em und zieht einen gepunkteten Rahmen um jedes div-Element der Klasse post.
+
+			  </p>
+		  </div>
+	  </div>
+	  
+	   <!-- Einfache Effekte-->
+	  
+<div class="column3"> 
+		   <h3>Einfache jQuery-Effekte</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	   <div class="column1">
+		
+			<p>
+				In Slideshows, Galerien, weichem Scrollen, responsiven Menüs und Accordion-Animationen für die Navigation finden sich meist jQuery-Effekte. </p> 
+	  </div>
+	  
+	  
+	   <div class="grau-KA"> 
+		<div class="pas1">
+			<p>
+				
+				$(selector).animate({params}, speed,callback);
+				
+			  </p>
+		  </div>
+		  
+	  </div>
+	    <div class="column3"> 
+		  </div>
+	  
+	  <!--<div class="button-KA" type="button" > Starte Animation </div>-->
+	  
+	    <div class="column1"> 
+			<div id="rechts" class="button"> Start </div>
+		  </div>
+	  
+	   <div class="column3 "> 
+		     <div id="bewegung-rechts" style="background:#F1BF22;height:100px;width:100px;position:absolute;"></div>
+		  </div>
+	    <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	  <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+				
+				$(document).ready(function(){ <br>
+    $("#button").click(function(){<br>
+        $("#bewegung-rechts").animate({left: '150px'});<br>
+    });<br>
+});<br>
+
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//Funktion greift auf das Dom zu <br>
+			//bei Klick auf Objekt mit ID = button <br>
+				//wird das Element mit ID = bewegung-rechts animiert und nach rechts um 150 Pixel verschoben <br>
+
+			  </p>
+		  </div>
+	  </div>
+	  <div class="column1 "> 
+		  <div id="hide" class="button"> Start </div>
+		  </div>
+	  
+	   <div class="column3 "> 
+		     <div id="verschwinden" style="background:#F1BF22;height:100px;width:100px;position:absolute;"></div>
+		  </div>
+	    <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	  <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	     <div class="column3"> 
+		  </div>
+	   <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+				
+				$(document).ready(function(){ <br>
+    $("#button").click(function(){<br>
+        $("#verschwinden").hide("slow");<br>
+    });<br>
+});<br>
+
+
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//Funktion greift auf das Dom zu <br>
+			//bei Klick auf Objekt mit ID = button <br>
+				//verschwindet das Element mit ID = verschwinden  <br>
+
+			  </p>
+		  </div>
+	  </div>
+	  <!-- XMLHttpRequest und Ajax-->
+	  
+<div class="column3"> 
+		   <h3>XMLHttpRequest und Ajax</h3>
+		   </div>
+	  
+	<div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+
+	   <div class="column1">
+		
+			<p>
+				
+
+
+				Bei der klassischen Webanwendung (z.B. bei einem PHP-Skript) lösen Aktionen des Benutzers einen HTTP-Request zurück zum Server aus. 
+				<br><br>
+				Das PHP-Script verifiziert den Benutzer, liest Daten aus der Datenbank, berechnet ein paar Zahlen und liefert dann eine neue HTML-Seite an den Client aus. Dabei besteht die neue Seite zum größten Teil aus denselben Elementen wie vorher und nur wenige Inhalte wurden tatsächlich geändert.
+				<br><br>
+		
+			</p>	
+	  </div>
+	  
+	  <div class="column1">
+	  <img src="img/php.svg" alt="Php Datenaustausch Infografik" style="max-height: 500Px">
+		</div>
+	  
+	 <div class="column1">
+		
+			<p><br>
+				Der <strong> XMLHttpRequest (kurz XHR) </strong> tauscht Daten zwischen Client und Server im Hintergrund aus, ohne die Seite komplett neu zu laden. Diese Technik ist als Ajax (Asynchronous Javascript And XML) bekannt geworden und hat sich 2005 einen Namen gemacht: Das war der Kern von Web 2.0. <br><br>
+				Mit dem <strong>XMLHttpRequest </strong> sendet ein JavaScript z.B. die Anforderung einer Datei an den Server und kann die Daten direkt per DOM und CSS in das Dokument einbinden.
+				Die Seite wird dabei nicht komplett neu geladen. <br> 
+				Mit XMLHttpRequest werden alle textbasierten Formate unterstützt und der Request läuft entweder über HTTP oder HTTPS ab.
+				
+<br><br>
+				<strong>Javascript XHR </strong>ist eine Schnittstelle zwischen JavaScript und den Daten auf dem Server. <br>
+<strong> XHR </strong>prüft z.B. Formulareingaben gegen die Datenbank ohne Hin- und Her zwischen Client und Server, lädt zusätzliche Informationen – mit und ohne Anwendung auf dem Server.
+				<br><br>
+
+				
+			</p>	
+		 
+	  </div>
+	  
+	   <div class="column1">
+	  <img src="img/xml.svg" alt="Xml Datenaustausch Infografik" style="max-height: 500Px">
+		</div>
+	  
+	  
+	  <div class="column1">
+		
+			<p><br>
+				<strong> Beispiel</strong> <br>
+				
+			Auf dem Server liegen Daten in einer XML-Datei (data.xml). 
+				
+			</p>	
+		 
+	  </div>
+	  
+	   <div class="column1 "> 
+		  <div id="einfuegen" class="button" > Daten zeigen </div>
+		  </div>
+	 <div class="column1"> 
+<div id="data" ></div>
+	  
+	  </div>
+	  <div class="column3"></div>
+	  
+	  <div class="grau-KA"> 
+		<div class="pas1">
+			<p>
+				&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+  &lt;data&gt;
+    Dies sind Daten aus einer XML-Datei
+  &lt;/data&gt;
+
+
+
+			  </p>
+			
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//XML Dokument <br> 
+
+//data-tag mit Inhalt
+
+			  </p>
+		  </div>
+		  
+	  </div>
+	  
+	  <div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+				&lt;button id="xmlrequest" <br>
+        data-xmlrequest="xmlhttp-data.xml"&gt; Datensätze zeigen &lt;/button&gt;
+
+
+
+			  </p>
+			<div class="pas2 grey">
+			<p>
+			//Button mit ID=xmlrequest<br> 
+
+//Verknüfung zur Datei
+
+			  </p>
+		  </div>
+		  </div>
+		  
+	  </div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+				document.querySelector ('#xmlrequest') .addEventListener( <br>
+    'click', <br>
+    function () { <br>
+	    var showXML = processXMLHttpRequest ( <br>
+		    this.dataset.xmlrequest, <br>
+		    this.parentNode <br>
+	    );<br>
+    } <br>
+); <br>
+
+
+
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			//Zugriff auf Element ID xmlrequest<br> 
+
+//bei Klick <br>
+				// Funktion <br>
+				// Zeige die Daten von XML und gebe sie an der Stelle aus
+
+			  </p>
+		  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	 
+  </section>
+
+
+  <footer>
+	  <br>
+     <p><a href="Datenschutz.html">Datenschutz</a> | <a href="Impressum.html">Impressum</a> </p>
+	  <br>
+  </footer>
+  
+</div>
+	
+	
+</body>
+	
+</html>

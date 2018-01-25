@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accordion</title>
+	<link href="css/anwendung.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet"> <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="js/Backtotop.js"></script>
+</head>
+
+<body>
+
+
+	
+<div class="container">
+  <navbar> 
+	</navbar>
+	<brand> <a href="index.html"><img src="img/Logo.png" alt="Lern JavaScript"></a>
+	</brand>
+	
+	<nav id="nav" role="navigation"> 
+	
+    <a class="menu einklapp" href="#">×</a>
+    <ul>
+       <li>
+            <a href="wasistJS.html">Was ist JS</a>
+        </li>
+        <li>
+            <a href="Grundkenntnisse.html">Grundkenntnisse</a>
+        </li>
+        <li>
+            <a href="Anwendungsbeispiele.html">Anwendungsbeispiele</a>
+        </li>
+    </ul>
+  </nav>
+	
+	
+    <header role="banner">
+      <a class="menu" href="#nav"><img src="img/Burger.png" alt="Menue"></a>
+   
+  </header>
+	
+	
+	
+	
+	<test> 
+		
+	<div class="ac"> 
+		
+ <button class="accordion">Erster Abschnitt</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+</div>
+
+<button class="accordion">Zweiter Abschnitt</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+</div>
+
+<button class="accordion">Dritter Abschnitt</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+</div> 
+		</div>
+</test>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  <section>
+	 
+	 
+	
+	
+		<div class="column3"> 
+		   <h3>Einfaches Accordion</h3>
+		   </div>
+	  <div class="underline">
+	  </div>
+	 
+		<div class="column3"> 
+		  </div>
+	  
+	   <div class="column1">
+         
+          <p>Erstellen eines einfachen Accordions.
+			 <br> Beim Klick auf ein Feld wird ein Textfeld darunter eingeblendet.
+			  Ebenso verändert sich das Icon an der rechten Seite.
+			  Beim erneuten Klick auf das Feld verschwindet das Textfeld darunter wieder.
+			  Natürlich können auch Bilder in die Felder darunter eingefügt werden.
+
+		</p>
+		 
+	</div>
+	  
+	  
+	<div class="rot-KA"> 
+		<div class="pas1">
+			<p>
+		
+			 &lt;button class="accordion"&gt;Erster Abschnitt &lt;/button&gt; <br>
+&lt;div class="panel"&gt; <br>
+  &lt;p&gt;Lorem ipsum ...&lt;/p&gt; <br>
+&lt;/div&gt;<br>
+
+&lt;button class="accordion"&gt;Zweiter Abschnitt&lt;/button&gt;<br>
+&lt;div class="panel"&gt;<br>
+  &lt;p&gt;Lorem ipsum ...&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+
+&lt;button class="accordion"&gt;Dritter Abschnitt&lt;/button&gt;<br>
+&lt;div class="panel"&gt;<br>
+  &lt;p&gt;Lorem ipsum ...&lt;/p&gt;<br>
+&lt;/div&gt; 
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  // Button mit Klasse accordion: Erster Abschnitt <br>
+				// div mit Klasse panel
+				<br> // Darin der ausklappbare Text <br>
+				// accordion wird immer wiederholt
+			  </p>
+			  
+		  </div>
+			 </div>
+	  <div class="blau-KA"> 
+		<div class="pas1">
+			<p>
+		
+			accordion { <br>
+    background-color: #eee; <br>
+    color: #444; <br>
+    cursor: pointer; <br>
+    padding: 18px; <br>
+    width: 100%; <br>
+    text-align: left; <br>
+    border: none; <br>
+    outline: none; <br>
+    transition: 0.4s; <br>
+} <br>
+
+
+.active, .accordion:hover { <br>
+    background-color: #ccc; <br>
+} <br>
+
+
+.panel { <br>
+    padding: 0 18px; <br>
+    background-color: white; <br>
+    max-height: 0; <br>
+    overflow: hidden; <br>
+    transition: max-height 0.2s ease-out; <br>
+}<br>
+.accordion:after { <br>
+    content: '\02795'; <br>
+    font-size: 10px; <br>
+    color: #777; <br>
+    float: right; <br>
+    margin-left: 5px; <br>
+}<br>
+
+.active:after { <br>
+    content: "\2796"; <br>
+} <br>
+				
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  //Klasse accordion <br>
+// Hintergrundfarbe <br>
+// Schriftfarbe <br>
+// Änderung des Cursors <br>
+// Innenabstand <br>
+// Weite <br>
+// Textausrichtung <br>
+		// kein Begrenzungsrahmen <br>
+				// Keine Outline <br>
+				// Reaktionszeit 0,4 Sekunden <br>
+<br>
+	// Aktives Feld oder bei Berührung mit Maus <br>
+				// Hintergrundfarbe <br>
+				<br>
+				// Klasse Panel also Textfeld<br>
+				// Innenabstand <br>
+				// Hintergrundfarbe <br>
+				// legt fest, dass alle eingeklappt sind <br>
+				// Kein Abstand zwischen den Kästen <br>
+			// Reaktionszeit mit Ease-out Bewegungsentschleunigung <br>
+				<br>
+				// Klasse accordion rechte Seite <br>
+				// Unicode für + <br>
+				// Schriftgröße <br>
+				// Farbe <br>
+				// Rechtsbündig<br>
+				// linker Außenabstand<br>
+				<br>
+				// Klasse active rechte Seite<br>
+				// Unicode für -<br>
+				
+
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  <div class="gelb-KA"> 
+		<div class="pas1">
+			<p>
+		var acc = document. getElementsByClassName ("accordion"); <br>
+var i;<br>
+<br>
+for (i = 0; i &lt; acc.length; i++) {<br>
+  acc[i].addEventListener ("click", function() {<br>
+    this.classList.toggle ("active");<br>
+    var panel = this.nextElementSibling;<br>
+    if (panel.style.maxHeight){<br>
+      panel.style.maxHeight = null; }<br>
+     else {<br>
+      panel.style.maxHeight = panel.scrollHeight + "px";<br>
+    }<br>
+  });<br>
+}
+			  </p>
+		  </div>
+		  <div class="pas2 grey">
+			<p>
+			  // Vaiable acc = Ausgabe accordion <br>
+				// Anlegen von i <br>
+				// for-Schleife
+				// Wenn das Feld gecklickt wurde, ist die Klasse active zuständig
+				<br>
+				// Variable panel = gibt das Element zurück, das unmittelbar auf das angegebene Element auf derselben Baumebene folgt
+				// If-else-Schleife 
+				// gibt an, dass das Textfeld von der Überklasse active geöffnet wird, solange es im click-Zustand ist
+				
+			  </p>
+			  
+		  </div>
+			 </div>
+	  
+	  		<div class="column3"> 
+		  </div>
+	  		<div class="column3"> 
+		  </div>
+	  
+	  
+	 
+  </section>
+
+
+  <footer>
+	  <br>
+     <p><a href="Datenschutz.html">Datenschutz</a> | <a href="Impressum.html">Impressum</a> </p>
+	  <br>
+  </footer>
+  
+</div>
+	
+	<script src="js/Accordion.js"></script>
+
+
+</body>
+	
+</html>

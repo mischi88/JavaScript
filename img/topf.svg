@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="Ebene_2">
+	
+		<rect x="85.159" y="24.5" fill="#FFFFFF" stroke="#E55228" stroke-width="3" stroke-miterlimit="10" width="156.341" height="226"/>
+	
+		<rect x="266.159" y="24.5" fill="#FFFFFF" stroke="#E55228" stroke-width="3" stroke-miterlimit="10" width="156.341" height="226"/>
+	<rect x="108.369" y="95.5" fill="none" stroke="#F1BF22" stroke-width="3" stroke-miterlimit="10" width="89.867" height="17"/>
+	<rect x="289.369" y="192.5" fill="none" stroke="#F1BF22" stroke-width="3" stroke-miterlimit="10" width="89.867" height="17"/>
+</g>
+<g id="Ebene_1">
+	<text transform="matrix(1 0 0 1 105.9924 54)" font-family="'MyriadPro-Regular'" font-size="17px">&lt;head&gt;</text>
+	<text transform="matrix(1 0 0 1 105.9924 134)" font-family="'MyriadPro-Regular'" font-size="17px">&lt;/head&gt;</text>
+	<text transform="matrix(1 0 0 1 286.9924 151)" font-family="'MyriadPro-Regular'" font-size="17px">&lt;body&gt;</text>
+	<text transform="matrix(1 0 0 1 286.9924 231)" font-family="'MyriadPro-Regular'" font-size="17px">&lt;/body&gt;</text>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="346.5" y1="328.5" x2="346.5" y2="368.5"/>
+		<polygon fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="335.5,368.5 357.5,368.5 346.5,382.5 		
+			"/>
+		<text transform="matrix(1 0 0 1 296 447)" font-family="'MyriadPro-Regular'" font-size="17px">Variable</text>
+		<text transform="matrix(1 0 0 1 106 447)" font-family="'MyriadPro-Regular'" font-size="17px">Variable</text>
+		
+			<rect x="306.581" y="299.217" fill="#FFFFFF" stroke="#84847B" stroke-width="3" stroke-miterlimit="10" width="78.753" height="28.859"/>
+		<g>
+			<text transform="matrix(1 0 0 1 315.8708 317.9109)" fill="#84847B" font-family="'MyriadPro-Regular'" font-size="12.5794px">Wert</text>
+		</g>
+		<text transform="matrix(1 0 0 1 104.9924 479)" font-family="'MyriadPro-Regular'" font-size="17px">Definition</text>
+		<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="71.5,341.5 99.5,341.5 99.5,453.5 
+			217.5,453.5 217.5,341.5 240.5,341.5 		"/>
+		<text transform="matrix(1 0 0 1 297.9924 479)" font-family="'MyriadPro-Regular'" font-size="17px">Zuweisung</text>
+		<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="260.5,341.5 288.5,341.5 288.5,453.5 
+			406.5,453.5 406.5,341.5 429.5,341.5 		"/>
+	</g>
+</g>
+</svg>
